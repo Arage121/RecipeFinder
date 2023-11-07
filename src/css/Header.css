@@ -1,0 +1,19 @@
+.MuiTypography-h2{                  /*Figured out the color needed through third party site by posting the given page screenshot */
+  color: #f8f4f4;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+  0 3px 0 #ccc, 0 4px 0 #ccc,
+  0 20px 30px rgba(0, 0, 0, 0.5);
+  text-rendering: geometricPrecision;
+}
+
+.heading{
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 0 0 0;
+  position: absolute;
+  left: 20%;
+}

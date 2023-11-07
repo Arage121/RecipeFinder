@@ -1,0 +1,128 @@
+a {
+    color: rgba(69, 69, 69, 0.907);
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 16.5%;
+}
+
+
+.like-icon{
+    padding: 5px 10px 0 0;
+}
+
+.recipe-heading{
+    /*Did this to match the way heading was looking in the screenshot. in the screenshot, the heading was not perfectly in the middle, but rather shifted towards the left side*/
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-header-container{
+   padding: 4px;
+   display: flex;
+   justify-content: space-between;
+   border-radius: 3px;
+}
+
+.cardContainer{
+    margin: 0 20px 20px 20px;
+    border-radius: 8px;
+}
+
+.rec{
+    padding: 2px 94px 4px 94px;
+    border: 1px solid black;
+}
+
+.ing{
+    padding: 2px 94px 4px 94px;
+    border: 1px solid black;
+}
+
+.left{
+    width: 40%;
+    text-align: center;
+}
+
+.pic{
+    width: 280px;                           /*Added borders and 400px height width to match the apearance of the Screenshot*/
+    height: 280px;
+    margin-top: 25%;
+}
+
+.cardContent{        /*Flexed the left and right classes in row to keep them alignred side by side*/
+    margin-left: 10%;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-direction: row;
+    padding: 5%;
+    gap: 10%;
+}
+
+.right {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.description{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.ingredients-container {         /*Height was kept 250px and added a overflow scroll property*/
+    height: 360px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: justify;
+    margin-left: 15%;
+}
+
+.recipe-container{            /*max height was kept 250px and used overflow auto porperty so that scroller only appears when it is really needed, increasing the clarity of the page*/
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.inrec{
+    margin-top: 20px;
+    text-align: justify;
+    overflow-y: scroll;
+    height: 380px;
+}
+
+@media screen and (max-width: 1056px){   /*Made the pager responsive to screen width change and compatible with mobile devices*/
+    .cardContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 95%;
+    }
+    .right{
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .cardContent{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 95%;
+    }
+    .right{
+        width: 95%;
+    }
+
+    .pic{
+        height: 200px;
+        width: 200px
+    }
+    .recipe-heading{
+        margin-left: 0;
+    }
+}

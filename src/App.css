@@ -1,0 +1,83 @@
+input {
+  margin-left: 2.5%;
+  margin-top: 40px;
+  color: white;
+  background-color: rgba(69, 69, 69, 0.907);
+  text-align: center;
+  padding: 5px;
+  width: 38vw;
+  border: 1px solid #b8b8b8;
+  border-radius: 10px;
+  font-size: large;
+  height: 50%;
+  border: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border: none; /* You can set the border to none if you want as well */
+}
+
+.ulDiv{
+  color:black;
+  margin-top: 25px;
+  margin-left: 32.5%;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+}
+
+.ul{
+  font-weight: 400;
+  font-size: x-large;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.flex-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  
+}
+.flex-container>div{
+  margin: 16px;
+}
+
+.btn{
+  position: absolute;
+  top: 8.7%;
+  right: 23%;
+  margin-left: 15px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: medium; 
+  width: 6vw;
+  border-radius: 50px;
+  border: 1px solid rgba(69, 69, 69, 0.941);                     
+}
+
+.btn:hover{
+  background-color: rgba(69, 69, 69, 0.941);
+  color: white;
+}
+
+.dispNone{                                            /*Classname used to change the state of the greetings and error messages*/
+  display: none;
+}
+
+.dipsBlock{                                            /*Classname used to change the state of the greetings and error messages*/ 
+  display: block;
+}
